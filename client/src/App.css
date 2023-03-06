@@ -1,9 +1,9 @@
 .App {
     display: flex;
     justify-content: center;
-  }
-  
-  .background-cover {
+}
+
+.background-cover {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,46 +13,71 @@
     background-image: url('./Images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  
-  .avatar{
+}
+
+.avatar{
     display: flex;
     justify-content: center;
     margin: 50px;
-  }
-  .avatar img{
+}
+.avatar img{
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: #ccc;
-  }
-  
-  .tasks {
+}
+
+.tasks {
     list-style: none;
     margin-top: 20px;
     padding: 10px;
     background-color: rgba(236,234,229,255);
     border-radius: 5%;
-  }
-  
-  .li-container {
+}
+
+.li-container {
     display: flex;
     align-items: center;
     /* margin: 10px; */
     padding: 10px;
-  }
-  
-  .li-container{
+}
+
+.li-container{
     width: 100%;
-  }
-  
-  .li-container span {
+}
+
+.li-container span {
     margin-left: 10px;
     text-decoration: none;
     width: 70%;
     font-size: larger;
-  }
-  
-  .li-container input[type="checkbox"] {
+}
+
+.li-container input[type="checkbox"] {
     margin-right: 10px;
-  }
+}
+.tasks{
+    max-height: 45vh;
+    overflow-y: auto; 
+    /* Add a scrollbar when content overflows */
+    overflow-x: hidden;
+}
+
+/* Style the scrollbar */
+.tasks::-webkit-scrollbar {
+    width: 10px;
+}
+
+.tasks::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}
+
+.tasks::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.tasks::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(68, 67, 67);;
+}
