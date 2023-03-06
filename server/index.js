@@ -9,9 +9,18 @@ app.use((req, res, next) => {
   );
   next();
 });
-app.use((req, res, next) => {
-  res.send("Welcome to Express");
+
+// all routers
+const apiRouter = require("./routes/api");
+
+// mount point for routers
+app.use("/api", apiRouter);
+
+app.use((err, req, res, next) => {
+  console.log(err);
+  next();
 });
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
