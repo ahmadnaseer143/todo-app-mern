@@ -20,7 +20,7 @@ function App() {
           creationTime: time,
         })
         .then((res) => {
-          console.log(res.data);
+          // console.log(res.data);
           setTasks([...tasks, res.data]);
           setTaskInput("");
         })

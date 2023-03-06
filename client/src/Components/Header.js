@@ -14,6 +14,7 @@ const Header = ({ setTaskInput, addTask, taskInput }) => {
         <input
           type="text"
           placeholder="To do today"
+          value={taskInput}
           onChange={(e) => setTaskInput(e.target.value)}
           onKeyDown={(e) => {
             if (e.key === "Enter") {
