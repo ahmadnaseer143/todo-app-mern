@@ -1,0 +1,27 @@
+.options-container{
+    display: flex;
+}
+.menu-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.menu-btn-line {
+    width: 5px;
+    height: 50%;
+    border-radius: 1px;
+    border-style: dotted;
+    border-width: 1px;
+    border: 3px dotted rgb(68, 67, 67);;
+}
+
+.delete-btn{
+    padding: 16px;
+    color:rgb(68, 67, 67);
+    cursor: pointer;
+}

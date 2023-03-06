@@ -1,0 +1,58 @@
+.App {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .background-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('./Images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .avatar{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  }
+  .avatar img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+  
+  .tasks {
+    list-style: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(236,234,229,255);
+    border-radius: 5%;
+  }
+  
+  .li-container {
+    display: flex;
+    align-items: center;
+    /* margin: 10px; */
+    padding: 10px;
+  }
+  
+  .li-container{
+    width: 100%;
+  }
+  
+  .li-container span {
+    margin-left: 10px;
+    text-decoration: none;
+    width: 70%;
+    font-size: larger;
+  }
+  
+  .li-container input[type="checkbox"] {
+    margin-right: 10px;
+  }
