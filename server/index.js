@@ -6,6 +6,7 @@ require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 5000;
 
+mongoose.set("strictQuery", false);
 // Connect to the database
 mongoose
   .connect(process.env.DB, { useNewUrlParser: true })

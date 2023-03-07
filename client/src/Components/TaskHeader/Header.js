@@ -1,6 +1,5 @@
 import React from "react";
-import { AiOutlinePlusCircle } from "react-icons/ai";
-// import { MdExpandMore } from "react-icons/md";
+import { MdExpandMore } from "react-icons/md";
 import "./header.css";
 const Header = ({ setTaskInput, addTask, taskInput }) => {
   return (
@@ -24,7 +23,7 @@ const Header = ({ setTaskInput, addTask, taskInput }) => {
         />
       </div>
       <div className="header-btns">
-        <AiOutlinePlusCircle
+        <MdExpandMore
           className="down-arrow"
           onClick={() => addTask(taskInput)}
         />

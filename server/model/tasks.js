@@ -13,4 +13,4 @@ var taskSchema = mongoose.Schema({
   creationTime: Date,
 });
 
-module.exports = Book = mongoose.model("task", taskSchema);
+module.exports = mongoose.model("task", taskSchema);

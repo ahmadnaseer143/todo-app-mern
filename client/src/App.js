@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
-import Options from "./Components/Options";
-import Header from "./Components/Header";
-import Checkbox from "./Components/Checkbox";
+import Options from "./Components/TaskContainer/Options";
+import Checkbox from "./Components/TaskContainer/Checkbox";
+import Header from "./Components/TaskHeader/Header";
 import bgImg from "./Images/man.avif";
 
 function App() {
