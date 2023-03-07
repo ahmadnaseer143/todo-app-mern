@@ -9,8 +9,14 @@ var taskSchema = mongoose.Schema({
   completed: {
     type: Boolean,
   },
-  completedTime: Date,
-  creationTime: Date,
+  completedTime: {
+    type: Date,
+    default: null,
+  },
+  creationTime: {
+    type: Date,
+    default: Date.now(),
+  },
 });
 
 module.exports = mongoose.model("task", taskSchema);

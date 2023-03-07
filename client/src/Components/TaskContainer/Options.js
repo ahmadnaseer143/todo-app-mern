@@ -9,7 +9,7 @@ const Options = ({ removeTask, task }) => {
     setShow(!show);
   };
   return (
-    <div className="options-container">
+    <div className="options-container" data-testid="options-container-test">
       {show ? (
         <RxCross1 className="menu-btn" onClick={handleClick} />
       ) : (
